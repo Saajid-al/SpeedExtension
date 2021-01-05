@@ -1,0 +1,26 @@
+{
+    "manifest_version": 2,
+    "name":  "SpeedKontrol",
+    "version" : "1.0",
+    "description": "1.0.0",
+    "icons" : {"128" : "SpeedKontrol.png",
+                "19" : "SpeedKontrol19.png",
+                "150": "SpeedKontrol150.png"            
+    },
+    "content_scripts": [
+        {
+            "matches":["<all_urls>"],
+            "js": ["play.js"],
+            "css":["play.css"]
+        }
+    ],
+    "permissions": ["storage"],
+    "options_ui": {
+      "page": "play.html",
+      "open_in_tab": true
+    },
+    "background": { 
+        "page":"play.html"
+    }
+    
+}

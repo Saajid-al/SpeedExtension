@@ -1,0 +1,80 @@
+#MainContainer { 
+    position: absolute;
+    background: rgb(34, 34, 34);
+    width: 3%;
+    height: 3%;
+    border-radius: 20%;
+    opacity: 50%;
+    top: 8%;
+    transition: 700ms;
+
+}
+#Decrease_Button { 
+    position: relative;
+    background: #2c2c2c;
+    top: 10%;
+    width: 44%;
+    height: 80%;
+    float: left;
+    margin-left: 5%;
+    border-radius: 20%;
+    text-align: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: 40%;
+    transition: 300ms;
+
+
+
+}
+#Increase_Button { 
+    position: relative;
+    background: rgb(68, 68, 68);
+    top: 10%;
+    width: 44%;
+    margin-right: 5%;
+    height: 80%;
+    float: right;
+    border-radius: 20%;
+    text-align: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: 40%;
+    transition: 300ms;
+
+}
+
+#Increase_Button:hover { 
+    transition: 500ms;
+    background: rgb(95, 95, 95);
+    opacity: 100%;
+    cursor: pointer;
+    transform: rotate(90deg);
+
+}
+#Decrease_Button:hover { 
+    transition: 500ms;
+    background: #3d3d3d;
+    opacity: 100%;
+    cursor: pointer;
+    transform: rotate(-90deg);
+    transition: 700ms;
+
+}
+#MainContainer:hover {
+    transition: 700ms;
+    transform: rotate(90deg);
+    opacity: 100%;
+
+    width: 10%;
+    height: 10%;
+    transition: 700ms;
+
+  }
+

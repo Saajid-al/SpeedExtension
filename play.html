@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="play.css">
+
+    <title>Speed PlayBack app</title>
+</head>
+<body>
+<!--TEST CONTENT-->
+    <div id="container">
+      <video id='video' controls="controls" preload='none' width="600" poster="http://media.w3.org/2010/05/sintel/poster.png">
+        <source id='mp4' src="http://media.w3.org/2010/05/sintel/trailer.mp4" type='video/mp4' />
+        <source id='webm' src="http://media.w3.org/2010/05/sintel/trailer.webm" type='video/webm' />
+        <source id='ogv' src="http://media.w3.org/2010/05/sintel/trailer.ogv" type='video/ogg' />
+        <track kind="subtitles" label="English subtitles" src="subtitles_en.vtt" srclang="en" default>
+        </track>
+
+        <track kind="subtitles" label="Deutsche Untertitelw" src="subtitles_de.vtt" srclang="de">
+        </track>
+            
+        <p>Can not support the HTML5 Video element.</p>
+      </video>
+    </div>
+<!--HTML CONTENT-->
+    <div>
+        <div id = "MainContainer">
+            <div id="Decrease_Button">-</div>
+            <div id="Increase_Button">+</div>
+        </div>
+    </div>
+        
+</body>
+</html>
+<script src="play.js"></script>
